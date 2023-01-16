@@ -1,6 +1,6 @@
 <?php
   // Open connection
-  $dbconn = mysqli_connect("localhost","root","123456","petshop");
+  $dbconn = mysqli_connect("localhost", "root", "123456", "petshop");
 
   // Check connection
   if (mysqli_connect_errno()) {
