@@ -1,3 +1,3 @@
-<?php include 'open_dbconn.php' ?>
+<?php include 'header.php' ?>
 
-<?php include 'close_dbconn.php' ?>
+<?php include 'footer.php' ?>
