@@ -1,5 +1,5 @@
 <?php include './inc/header.php';
-  $result = mysqli_query($dbconn,'SELECT * FROM dogs ORDER BY nome;'); ?>
+  $dogs = mysqli_query($dbconn, 'SELECT * FROM dogs ORDER BY nome;'); ?>
 <div class="container">
   <h1>Dogs</h1>
   <table class="table table-striped table-hover">
@@ -11,15 +11,15 @@
       </tr>
     </thead>
     <tbody>
-      <?php foreach($result as $line){ ?>
+      <?php foreach($dogs as $dog){ ?>
       <tr>
-        <td scope="row"><?= $line['nome'] ?></td>
-        <td scope="row"><?= $line['raca'] ?></td>
-        <td scope="row"><?= date('d-m-Y',strtotime($line['data_nascimento'])) ?></td>
+        <td scope="row"><?= $dog['nome'] ?></td>
+        <td scope="row"><?= $dog['raca'] ?></td>
+        <td scope="row"><?= date('d-m-Y', strtotime($dog['data_nascimento'])) ?></td>
       </tr>
       <?php } ?>
     </tbody>
   </table>
 </div>
-<?php mysqli_free_result($result);
+<?php mysqli_free_result($dogs);
 include './inc/footer.php'; ?>
