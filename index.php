@@ -1,10 +1,8 @@
-<?php include './inc/header.php' ?>
-<?php
+<?php include './inc/header.php';
   $sql = 'SELECT * FROM dogs ORDER BY nome;';
-  $result = mysqli_query($dbconn,$sql);
-?>
-<h1>Dogs</h1>
-<div class="line"></div>
+  $result = mysqli_query($dbconn,$sql); ?>
+<div class="container">
+  <h1>Dogs</h1>
   <table class="table table-striped table-hover">
     <thead>
       <tr>
@@ -18,11 +16,11 @@
       <tr>
         <td scope="row"><?= $line['nome'] ?></td>
         <td scope="row"><?= $line['raca'] ?></td>
-        <td scope="row"><?= $line['data_nascimento'] ?></td>
+        <td scope="row"><?= date('d-m-Y',strtotime($line['data_nascimento'])) ?></td>
       </tr>
       <?php } ?>
     </tbody>
   </table>
-<?php mysqli_free_result($result); ?>
 </div>
-<?php include './inc/footer.php' ?>
+<?php mysqli_free_result($result);
+include './inc/footer.php'; ?>
