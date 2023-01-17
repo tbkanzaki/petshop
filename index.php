@@ -1,5 +1,7 @@
-<?php include './inc/header.php';
-  $dogs = mysqli_query($dbconn, 'SELECT * FROM dogs ORDER BY nome;'); ?>
+<?php
+  include './inc/header.php';
+  $dogs = mysqli_query($dbconn, 'SELECT * FROM dogs ORDER BY nome;');
+?>
 <div class="container">
   <h1>Dogs</h1>
   <table class="table table-striped table-hover">
