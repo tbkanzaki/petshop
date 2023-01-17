@@ -13,13 +13,13 @@
       </tr>
     </thead>
     <tbody>
-      <?php foreach($dogs as $dog){ ?>
+      <?php foreach($dogs as $dog): ?>
       <tr>
         <td><?= $dog['nome'] ?></td>
         <td><?= $dog['raca'] ?></td>
         <td><?= date('d-m-Y', strtotime($dog['data_nascimento'])) ?></td>
       </tr>
-      <?php } ?>
+      <?php endforeach ?>
     </tbody>
   </table>
 </div>
