@@ -2,10 +2,7 @@
   include './inc/header.php';
   $dogs = mysqli_query($dbconn, 'SELECT * FROM dogs ORDER BY nome;');
 ?>
-<div class="container">
-  <div class="p-3">
-    <a href="./dogs/new.php" class="btn btn-outline-secondary" role="button">Novo</a>
-  </div>
+<div class="container p-3">
   <table class="table table-striped table-hover">
     <thead>
       <tr>

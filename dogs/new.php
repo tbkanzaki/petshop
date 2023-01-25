@@ -13,6 +13,7 @@
     </div>
     <div class="p-2  col-6">
       <button class="btn btn-secondary" type="submit">Cadastrar</button>
+      <button class="btn btn-warning"  onClick="JavaScript: window.history.back();">Cancelar</button>
     </div>
   </form>
 </div>
