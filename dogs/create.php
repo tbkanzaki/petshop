@@ -1,6 +1,6 @@
 <?php 
-  header("location:index.php");
-  include './inc/open_dbconn.php';
+  header("location:../index.php");
+  include '../inc/open_dbconn.php';
 
   $nome = $_POST["nome"];
   $raca = $_POST["raca"];
@@ -12,5 +12,5 @@
   $stmt->execute();
   $stmt->close();
 
-  include './inc/close_dbconn.php';
+  include '../inc/close_dbconn.php';
 ?>

@@ -1,3 +1,4 @@
-    <?php include 'close_dbconn.php'; ?>
+      <?php include 'close_dbconn.php'; ?>
+    </div>
   </body>
 </html>
