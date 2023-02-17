@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Petshop Friends</title>
     <link rel="stylesheet" href="/petshop/dist/app.css" type="text/css">
-    <script src="/petshop/dist/app.js"></script>
+    <script src="/petshop/dist/app.js" defer></script>
   </head>
   <body>
       <?php
